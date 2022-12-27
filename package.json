@@ -1,0 +1,33 @@
+{
+  "name": "courservio-blog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently npm:watch:*",
+    "watch:tw": "tailwindcss -i ./assets/css/main.css -o ./assets/css/style.css --watch",
+    "watch:hugo": "hugo server",
+    "build": "tailwindcss -i ./assets/css/main.css -o ./assets/css/style.css && hugo --minify"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prevplan/courservio.git"
+  },
+  "author": "Holger Schmermbeck",
+  "license": "CC BY-SA-4.0",
+  "bugs": {
+    "url": "https://github.com/prevplan/courservio-blog/issues"
+  },
+  "homepage": "https://github.com/prevplan/courservio-blog#readme",
+  "devDependencies": {
+    "@tailwindcss/aspect-ratio": "^0.4.2",
+    "@tailwindcss/forms": "^0.5.3",
+    "@tailwindcss/typography": "^0.5.8",
+    "alpinejs": "^3.10.5",
+    "autoprefixer": "^10.4.13",
+    "concurrently": "^7.6.0",
+    "postcss": "^8.4.18",
+    "postcss-cli": "^10.0.0",
+    "tailwindcss": "^3.2.3"
+  }
+}

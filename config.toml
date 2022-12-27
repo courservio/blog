@@ -1,0 +1,9 @@
+baseURL = 'https://blog.courservio.de'
+languageCode = 'de'
+title = 'courservio Blog'
+disableKinds = ["taxonomy","taxonomyTerm"]
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
