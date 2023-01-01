@@ -1,9 +1,48 @@
 baseURL = 'https://blog.courservio.de'
 languageCode = 'de'
 title = 'courservio Blog'
-disableKinds = ["taxonomy","taxonomyTerm"]
+disableKinds = ["taxonomyTerm"]
+
+enableGitInfo = true
+enableRobotsTXT = true
+
+defaultContentLanguage = 'de'
+staticDir = ['static']
+
+[params]
+  discourseURL = 'https://forum.courservio.de/'
+  publisherName = 'courservio'
+  publisherURL = 'https://courservio.de'
+  publisherLogo = ''
+
+[languages]
+  [languages.de]
+    baseURL = 'https://hugo.uber.space'
+    languageName = 'Deutsch'
+    staticDir2 = 'static_de'
+    title = 'courservio - die freie Kursverwaltung'
+    weight = 1
+    contentDir = 'content/de'
+
+  [languages.en]
+    baseURL = 'https://blog.courservio.com'
+    languageName = 'English'
+    staticDir2 = 'static_en'
+    title = 'courservio - the free course management'
+    weight = 2
+    contentDir = 'content/en'
 
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
+
+[permalinks]
+  posts = "/:year/:month/:slug/"
+  blog = "/:year/:month/:slug/"
+  page = "/:slug/"
+  tags = "/tag/:slug/"
+
+[taxonomies]
+  tag = "tags"
+  author = "author"

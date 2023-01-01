@@ -1,0 +1,21 @@
+{{ $author := index .Site.Data.authors (.Params.author | default "default") }}
+{{- if $author -}}
+    <div class="mt-6 flex items-center">
+        <div class="flex-shrink-0">
+            <a href="/author/{{ .Params.author | urlize }}">
+                <span class="sr-only">{{ $author.name }}</span>
+                <img class="h-10 w-10 rounded-full" src="{{ $author.avatar }}" alt="">
+            </a>
+        </div>
+        <div class="ml-3">
+            <p class="text-sm font-medium text-gray-900">
+                <a href="/author/{{ .Params.author | urlize }}">{{ $author.name }}</a>
+            </p>
+            <div class="flex space-x-1 text-sm text-gray-500">
+                <time datetime="{{ .Date.Format "2006-1-2" }}">{{ .Date | time.Format ":date_medium" }}</time>
+                <span aria-hidden="true">&middot;</span>
+                <span>{{ .ReadingTime }} min read</span>
+            </div>
+        </div>
+    </div>
+{{- end -}}

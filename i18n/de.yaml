@@ -1,0 +1,35 @@
+404_page_not_found:
+  other: 404 Fehler - Seite nicht gefunden
+
+404_accidents_happens:
+  other: Unfälle passieren ...
+
+404_first_aid_is_on_the_way:
+  other: ... aber für die Erste-Hilfe ist schon gesorgt!
+
+404_image_alt:
+  other: trauriges Kartonmännchen
+
+offline_header:
+  other: Oops, scheinbar bist Du offline!
+
+offline_text:
+  other: Baue doch bitte eine neue Verbindung auf, damit es weiter gehen kann...
+
+imprint:
+  other: Impressum
+
+imprint_url:
+  other: impressum/
+
+privacy:
+  other: Datenschutz
+
+privacy_url:
+  other: datenschutz/
+
+tags_collection:
+  one:
+    Eine Sammlung von einem Beitrag
+  other:
+    Eine Sammlung von {{ .Count }} Beiträgen

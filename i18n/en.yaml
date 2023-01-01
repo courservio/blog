@@ -1,0 +1,35 @@
+404_page_not_found:
+  other: 404 error - site not found
+
+404_accidents_happens:
+  other: Accidents happen ...
+
+404_first_aid_is_on_the_way:
+  other: ... but first aid is already taken care of it!
+
+404_image_alt:
+  other: sad cardboard man figure
+
+offline_header:
+  other: Oops, you are offline.
+
+offline_text:
+  other: Please build a new connection, so that it can go on...
+
+imprint:
+  other: imprint
+
+imprint_url:
+  other: imprint/
+
+privacy:
+  other: privacy
+
+privacy_url:
+  other: privacy/
+
+tags_collection:
+  one:
+    A collection of one post
+  other:
+    A collection of {{ .Count }} posts

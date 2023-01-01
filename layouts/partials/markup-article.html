@@ -1,0 +1,35 @@
+{{ $author := index .Site.Data.authors (.Params.author | default "default") }}
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "{{ .Permalink }}"
+        },
+        "headline": "{{ .Title }}",
+        "description": "{{ .Description }}",
+        "keywords": "{{ range $i, $e := .Params.tags }}{{ if $i }}, {{ end }}{{ $e }}{{ end }}",
+        "image": "",
+        "author": {
+            "@type": "Person",
+            "name": "{{ $author.name }}",
+            "url": " {{.Site.BaseURL}}author/{{ .Params.author | urlize }}"
+        },
+        {{ if .Site.Params.publisherName }}
+            "publisher": {
+                "@type": "Organization",
+                "name": "{{ .Site.Params.publisherName }}",
+                "url": "{{ .Site.Params.publisherURL }}",
+                "logo": {
+                    "@type": "ImageObject",
+                    "url": "{{ .Site.Params.publisherLogo }}"
+                }
+            },
+        {{ end }}
+        "datePublished": "{{ .PublishDate.Format "2006-01-02" }}"
+        {{ if eq .PublishDate .Lastmod }}
+            , "dateModified": "{{ .Lastmod.Format "2006-01-02" }}"
+        {{end}}
+    }
+</script>
