@@ -17,7 +17,7 @@ staticDir = ['static']
 
 [languages]
   [languages.de]
-    baseURL = 'https://hugo.uber.space'
+    baseURL = 'https://blog.courservio.de'
     languageName = 'Deutsch'
     staticDir2 = 'static_de'
     title = 'courservio - die freie Kursverwaltung'
