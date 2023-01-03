@@ -1,0 +1,46 @@
+name: uberspace transfer
+
+on:
+  push:
+    branches:
+      - main
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          submodules: true  # Fetch Hugo themes (true OR recursive)
+          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
+
+      - name: Use Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 19
+
+      - run: npm install
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: 'latest'
+          extended: true
+
+      - name: Generate Tailwind CSS
+        uses: ZoeyVid/tailwindcss-update@v1.3.0
+        with:
+          input: assets/css/main.css
+          output: assets/css/style.css
+          params: "--minify"
+      - name: Build
+        run: hugo --minify
+
+      - name: Rsync Deployments Action
+        uses: Burnett01/rsync-deployments@5.2
+        with:
+          switches: -avzr --delete
+          path: public/*
+          remote_path: /var/www/virtual/${{ secrets.UBERSPACE_USER }}/blog/
+          remote_host: ${{ secrets.UBERSPACE_HOST }}
+          remote_user: ${{ secrets.UBERSPACE_USER }}
+          remote_key: ${{ secrets.DEPLOY_KEY_PRIVATE }}
