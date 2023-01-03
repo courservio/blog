@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/prevplan/courservio.git"
+    "url": "git+https://github.com/courservio/blog.git"
   },
   "author": "Holger Schmermbeck",
-  "license": "CC BY-SA-4.0",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/prevplan/courservio-blog/issues"
+    "url": "https://github.com/courservio/blog/issues"
   },
-  "homepage": "https://github.com/prevplan/courservio-blog#readme",
+  "homepage": "https://github.com/courservio/blog#readme",
   "devDependencies": {
     "@tailwindcss/aspect-ratio": "^0.4.2",
     "@tailwindcss/forms": "^0.5.3",

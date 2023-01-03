@@ -6,7 +6,7 @@ The code and content for the courservio-blog (blog.courservio.de / blog.courserv
  - Clone repository, install dependencies
 
 ```shell
-git clone https://github.com/prevplan/courservio-blog/courservio-blog.dev courservio-blog
+git clone https://github.com/courservio/blog.git courservio-blog
 cd courservio-blog
 npm install
 ```
