@@ -20,13 +20,13 @@ imprint:
   other: Impressum
 
 imprint_url:
-  other: impressum/
+  other: https://forum.courservio.de/impressum
 
 privacy:
   other: Datenschutz
 
 privacy_url:
-  other: datenschutz/
+  other: https://forum.courservio.de/privacy
 
 tags_collection:
   one:
