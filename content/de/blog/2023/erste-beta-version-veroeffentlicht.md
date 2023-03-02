@@ -38,6 +38,16 @@ Es steht also jede\*r frei, sich dort die aktuelle Version herunterzuladen und z
 
 Eine Dokumentation und eine *Schritt-für-Schritt-Anleitung* wird wie erwähnt zeitnah folgen und zukünftig erweitert werden. Hinweise hierzu werde ich in die Kommentare (unter diesem Beitrag) schreiben.
 
+---
+**Update:**
+
+Die Dokumentation ist inzwischen unter https://docs.courservio.de online. Die [Installation](https://docs.courservio.de/de/docs/installation/einfuehrung/) auf einem [uberspace](https://uberspace.de) ist dort bereits beschrieben. Weitere Anleitungen erfolgen nach und nach.
+
+Auch die Dokumentation ist selbstverständlich auf [github](https://github.com/courservio/docs) verfügbar und jede\*r eingeladen diese zu ergänzen. Am Ende jeder Seite gibt es auch einen Link, um die jeweilige Seite auf github direkt zu bearbeiten.\
+Bei Fragen, auch hierzu gerne das [Forum](https://forum.courservio.de) nutzen. ;-)
+
+---
+
 Als *bevorzugten Hoster* empfehle ich in jedem Fall [uberspace](https://uberspace.de). Dies ist der Anbieter, den ich selbst auch seit Jahren für alles verwende, wenn es nicht zwangsläufig ein *eigener Server* sein muss.
 
 **Aktuelles Angebot:**  
